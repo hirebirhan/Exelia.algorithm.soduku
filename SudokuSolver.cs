@@ -83,12 +83,6 @@ namespace Exelia.algorithm.soduku
                 new int[] {1}
             };
 
-            Console.WriteLine("Good sudoku 1: " + ValidateSudoku(goodSudoku1));
-            Console.WriteLine("Good sudoku 2: " + ValidateSudoku(goodSudoku2));
-            Console.WriteLine("Bad sudoku 1 evaluated to be: " + ValidateSudoku(badSudoku1));
-            Console.WriteLine("Bad sudoku 2 evaluated to be: " + ValidateSudoku(badSudoku2));
-
-            
             Debug.Assert(ValidateSudoku(goodSudoku1), "This is supposed to validate! It's a good sudoku!");
             Debug.Assert(ValidateSudoku(goodSudoku2), "This is supposed to validate! It's a good sudoku!");
             Debug.Assert(!ValidateSudoku(badSudoku1), "This isn't supposed to validate! It's a bad sudoku!");
